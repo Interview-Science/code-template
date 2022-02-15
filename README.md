@@ -113,7 +113,7 @@ Return the index of first element greater or equal to target
             return false;
         }
     public:
-        int searchInsert(vector<int>& nums, int target) {
+        int lowerBound(vector<int>& nums, int target) {
             int left = 0, right = nums.size();
             while (left < right) {
                 int mid = ((right - left) >> 1) + left;
@@ -153,7 +153,7 @@ Return the index of first element greater to target
 #### Python3
         
 	class Solution:
-        def lower_bound(self, nums: List[int], target: int) -> int:
+        def upper_bound(self, nums: List[int], target: int) -> int:
             def valid(num, target):
                 if num > target:
                     return True
@@ -177,7 +177,7 @@ Return the index of first element greater to target
             }
             return false;
         }
-        public int lowerBound(int[] nums, int target) {
+        public int upperBound(int[] nums, int target) {
             int left = 0, right = nums.length;
             while (left < right) {
                 int mid = ((right - left) >> 1) + left;
@@ -202,7 +202,7 @@ Return the index of first element greater to target
             return false;
         }
     public:
-        int searchInsert(vector<int>& nums, int target) {
+        int upperBound(vector<int>& nums, int target) {
             int left = 0, right = nums.size();
             while (left < right) {
                 int mid = ((right - left) >> 1) + left;
